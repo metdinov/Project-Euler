@@ -4,7 +4,7 @@
 require 'prime'
 
 def largest_factor(number)
-  upper_bound = Math.sqrt(number).floor
+  upper_bound = number / 2
 
   upper_bound.downto(2) do |n|
     if number % n == 0 && n.prime?
